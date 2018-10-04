@@ -1,0 +1,28 @@
+python train.py \
+--seed=0 \
+--exp_dir=../exp/ckpts \
+--exp_name=awa \
+--data_dir=../data/archives \
+--dataset=awa \
+--model=vzsl \
+--isTrain \
+--gpu_id=0 \
+--lr=0.0001 \
+--lr_decay_step=1000 \
+--lr_decay_rate=0.9 \
+--batch_size=1024 \
+--epochs=1000 \
+--save_freq=50 \
+--print_freq=1 \
+--vdim=1024 \
+--sdim=85 \
+--zdim=100 \
+--n_classes=50 \
+--using_rec_loss \
+--using_kl_loss \
+--using_margin_loss \
+--lambda_rec=1.0 \
+--lambda_kl=1.0 \
+--lambda_margin=1.0 \
+--lambda_cls=1.0
+
